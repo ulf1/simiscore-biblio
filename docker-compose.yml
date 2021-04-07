@@ -1,0 +1,8 @@
+version: '3'
+services:
+  thisfastapiservice:
+    build: .
+    ports:
+      - "12345:80"
+  #otherservice:
+  #  image: "dockername:version"
