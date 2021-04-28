@@ -20,8 +20,6 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 # install packages
 RUN pip3 install --no-cache-dir --upgrade pip
-COPY requirements-docker.txt requirements-docker.txt
-RUN pip3 install --no-cache-dir -r requirements-docker.txt
 COPY requirements.txt requirements.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
 
@@ -47,5 +45,6 @@ EXPOSE 80
 COPY ./app /app
 
 # Start server
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 #CMD tail -f /dev/null
+#CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["gunicorn", "app.main:app", "--bind", "0.0.0.0:80", "--worker-class", "uvicorn.workers.UvicornH11Worker", "--workers", "2", "--worker-tmp-dir", "/dev/shm"]
