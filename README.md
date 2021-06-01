@@ -10,7 +10,11 @@
 Call Docker Compose
 
 ```sh
+export NUM_WORKERS=2
+export API_PORT=12345
 docker-compose up
+# or as oneliner:
+# NUM_WORKERS=2 API_PORT=12345 docker-compose up
 ```
 
 (Start docker daemon before, e.g. `open /Applications/Docker.app` on MacOS).

@@ -44,7 +44,5 @@ EXPOSE 80
 # Copy /app/main.py
 COPY ./app /app
 
-# Start server
-#CMD tail -f /dev/null
-#CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
-CMD ["gunicorn", "app.main:app", "--bind", "0.0.0.0:80", "--worker-class", "uvicorn.workers.UvicornH11Worker", "--workers", "2", "--worker-tmp-dir", "/dev/shm"]
+# Start server (enable if container startup is NOT configured in docker-compose.yml)
+#CMD ["gunicorn", "app.main:app", "--bind", "0.0.0.0:80", "--worker-class", "uvicorn.workers.UvicornH11Worker", "--workers", "2", "--worker-tmp-dir", "/dev/shm"]
