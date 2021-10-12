@@ -1,8 +1,11 @@
 version: '3'
 services:
-  thisfastapiservice:
-    build: .
+  simiscore-legal:
+    build: .   # build using Dockfile in this directory
+    command: sh -c "gunicorn app.main:app 
+                      --bind 0.0.0.0:80 
+                      --worker-class uvicorn.workers.UvicornH11Worker 
+                      --workers ${NUM_WORKERS}
+                      --worker-tmp-dir /dev/shm"
     ports:
-      - "12345:80"
-  #otherservice:
-  #  image: "dockername:version"
+      - "${API_PORT}:80"
