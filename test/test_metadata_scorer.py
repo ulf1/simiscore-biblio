@@ -47,3 +47,44 @@ def test_one_query_string(scorer, test_metadata):
     test_query = {"some_id": test_metadata[0]}
     result = scorer.compute_similarity_matrix(test_query)
     assert result == {"ids": ["some_id"], "matrix": [[1.0]]}
+
+
+def test_score_for_same_string_is_1(scorer, test_metadata):
+    scores = scorer.compute_similarity_matrix(
+        {0: test_metadata[0], 1: test_metadata[0]}
+    )["matrix"]
+    assert scores[0][1] == 1.0
+
+
+def test_score_for_different_strings_not_1(scorer, test_metadata):
+    scores = scorer.compute_similarity_matrix(
+        {0: test_metadata[0], 1: test_metadata[1]}
+    )["matrix"]
+    assert scores[0][1] < 1.0
+
+
+def test_two_similar_strings_have_high_similarity_score(scorer, test_metadata):
+    similar_metadata1 = test_metadata[5]
+    similar_metadata2 = test_metadata[6]
+    other_metadata = test_metadata[0]
+    test_query = {
+        "sent1": similar_metadata1,
+        "sent2": similar_metadata2,
+        "sent3": other_metadata,
+    }
+    scores = scorer.compute_similarity_matrix(test_query)["matrix"]
+    assert scores[0][1] > scores[0][2]
+
+
+def test_that_all_ids_from_input_returned(scorer, test_metadata):
+    test_query = dict(zip(range(len(test_metadata)), test_metadata))
+    result = scorer.compute_similarity_matrix(test_query)
+    assert result["ids"] == list(range(13))
+
+
+def test_scores_multiple_strings(scorer, test_metadata):
+    test_query = dict(zip(range(len(test_metadata)), test_metadata))
+    result = scorer.compute_similarity_matrix(test_query)["matrix"]
+    eigen_scores = [result[i][i] for i in range(len(result))]
+    assert eigen_scores[0] == 1
+    assert pytest.approx(sum(eigen_scores) == len(test_metadata))
