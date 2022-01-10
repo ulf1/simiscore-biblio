@@ -1,9 +1,9 @@
-import pytest
+from test.data import one_line_metadata
 
+import pytest
 from starlette.testclient import TestClient
 
 from app.main import app, srvurl
-from test.data import one_line_metadata
 
 
 @pytest.fixture
@@ -17,7 +17,11 @@ def test_read_info():
     assert response.status_code == 200
     assert response.json() == {
         "version": "0.1.0",
-        "metadata_scorer": ["max_k: 5", "multiline: False", "start_tag: fundstelle"],
+        "metadata_scorer": [
+            "max_k: 5",
+            "multiline: False",
+            "start_tag: fundstelle",
+        ],
     }
 
 
@@ -36,7 +40,12 @@ def test_post_empty_list():
 
 def test_post_request_one_line_strings(test_online_metadata):
     client = TestClient(app)
-    response = client.post(f"{srvurl}/similarities/", json=test_online_metadata)
-    result = [response.json()["matrix"][i][i] for i in range(len(test_online_metadata))]
+    response = client.post(
+        f"{srvurl}/similarities/", json=test_online_metadata
+    )
+    result = [
+        response.json()["matrix"][i][i]
+        for i in range(len(test_online_metadata))
+    ]
     assert response.status_code == 200
     assert pytest.approx(sum(result) == len(test_online_metadata))

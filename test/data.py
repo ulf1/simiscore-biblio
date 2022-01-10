@@ -1,35 +1,37 @@
 one_line_metadata = [
-      "Beenken, Hermann: Das Neunzehnte Jahrhundert in der deutschen Kunst, "
-      "München: Bruckmann 1944, S. 167",
-      "Süddeutsche Zeitung, 1995. Zitiert nach: Süddeutsche Zeitung, " "27.11.1945.",
-      "Lehmann, Arthur-Heinz: Mensch, sei positiv dagegen!, Dresden: Heyne "
-      "1939 [1939], S. 96",
-      "Werfel, Franz: Die Vierzig Tage des Musa Dagh I, Stockholm: Bermann -"
-      " Fischer 1947 [1933], S. 225",
-      "Reimann, Hans: Vergnügliches Handbuch der Deutschen Sprache, "
-      "Düsseldorf: Econ-Verl. 1964 [1931], S. 212",
-      "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
-      "Berlin: Directmedia Publ. 2001 [1917], S. 13229",
-      "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
-      "Berlin: Directmedia Publ. 2001 [1917], S. 13247",
-      "Christ, Lena: Erinnerungen einer Überflüssigen. In: Deutsche Liter"
-      "atur von Frauen, Berlin: Directmedia Publ. 2001 [1912], S. 12498",
-      "Stadler, Arnold: Sehnsucht, Köln: DuMont Literatur und Kunst Verlag "
-      "2002, S. 102",
-      "Hippel, Theodor Gottlieb von: Lebensläufe nach Aufsteigender Linie. "
-      "Bd. 3,2. Berlin, 1781.",
-      "Rudolphi, Caroline Christiane Louise: Gemälde weiblicher Erziehung. "
-      "Bd. 1. Heidelberg, 1807.",
-      "Nestroy, Johann: Einen Jux will er sich machen. Wien, 1844.",
-      "Rosegger, Peter: Die Schriften des Waldschulmeisters. Pest, 1875."
-      "Die Zeit, 19.10.2000, Nr. 43",
-  ]
+    "Beenken, Hermann: Das Neunzehnte Jahrhundert in der deutschen Kunst, "
+    "München: Bruckmann 1944, S. 167",
+    "Süddeutsche Zeitung, 1995. Zitiert nach: Süddeutsche Zeitung, "
+    "27.11.1945.",
+    "Lehmann, Arthur-Heinz: Mensch, sei positiv dagegen!, Dresden: Heyne "
+    "1939 [1939], S. 96",
+    "Werfel, Franz: Die Vierzig Tage des Musa Dagh I, Stockholm: Bermann -"
+    " Fischer 1947 [1933], S. 225",
+    "Reimann, Hans: Vergnügliches Handbuch der Deutschen Sprache, "
+    "Düsseldorf: Econ-Verl. 1964 [1931], S. 212",
+    "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
+    "Berlin: Directmedia Publ. 2001 [1917], S. 13229",
+    "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
+    "Berlin: Directmedia Publ. 2001 [1917], S. 13247",
+    "Christ, Lena: Erinnerungen einer Überflüssigen. In: Deutsche Liter"
+    "atur von Frauen, Berlin: Directmedia Publ. 2001 [1912], S. 12498",
+    "Stadler, Arnold: Sehnsucht, Köln: DuMont Literatur und Kunst Verlag "
+    "2002, S. 102",
+    "Hippel, Theodor Gottlieb von: Lebensläufe nach Aufsteigender Linie. "
+    "Bd. 3,2. Berlin, 1781.",
+    "Rudolphi, Caroline Christiane Louise: Gemälde weiblicher Erziehung. "
+    "Bd. 1. Heidelberg, 1807.",
+    "Nestroy, Johann: Einen Jux will er sich machen. Wien, 1844.",
+    "Rosegger, Peter: Die Schriften des Waldschulmeisters. Pest, 1875."
+    "Die Zeit, 19.10.2000, Nr. 43",
+]
 
 multiline_metadata = [
-"""
+    """
 <Beleg>
   <Belegtext>
-    Vielleicht war der Riegel defekt und mußte vom <Stichwort>Blockwart</Stichwort> ausgetauscht werden.
+    Vielleicht war der Riegel defekt und mußte vom <Stichwort>Blockwart
+    </Stichwort> ausgetauscht werden.
   </Belegtext>
   <Fundstelle>
     <Dokument>2003/Franck_Lagerfeuer_2003</Dokument>
@@ -39,12 +41,14 @@ multiline_metadata = [
     <Seite>123</Seite>
     <Datum>2003</Datum>
     <Textklasse>Belletristik::Roman</Textklasse>
-    <Bibl>Franck, Julia: Lagerfeuer, Köln: DuMont Literatur und Kunst Verlag 2003, S. 123</Bibl>
+    <Bibl>Franck, Julia: Lagerfeuer, Köln: DuMont Literatur und Kunst Verlag
+    2003, S. 123</Bibl>
   </Fundstelle>
 </Beleg>""",
-"""<Beleg>
+    """<Beleg>
   <Belegtext>
-    Der <Stichwort>Blockwart</Stichwort> der DDR-Intellektuellen, Kurt Hager, geifert 1956:
+    Der <Stichwort>Blockwart</Stichwort> der DDR-Intellektuellen, Kurt Hager,
+    geifert 1956:
   </Belegtext>
   <Fundstelle>
     <Dokument>2000/zeit2000_03_52_331</Dokument>
@@ -56,9 +60,12 @@ multiline_metadata = [
     <Textklasse>Zeitung::Literatur</Textklasse>
     <Bibl>Die Zeit, 13.01.2000, Nr. 3</Bibl>
   </Fundstelle>
-</Beleg>""", """<Beleg>
+</Beleg>""",
+    """<Beleg>
   <Belegtext>
-    Am anderen Tag trafen sie <Stichwort>Blockwart</Stichwort> Otto im Hof, der sich straffte und »Heil Hitler!« kreischte, und Paul zauderte nicht, sich bei Blockwart Otto als Stotterer bekannt zu machen.
+    Am anderen Tag trafen sie <Stichwort>Blockwart</Stichwort> Otto im Hof, der
+     sich straffte und »Heil Hitler!« kreischte, und Paul zauderte nicht, sich
+    bei Blockwart Otto als Stotterer bekannt zu machen.
   </Belegtext>
   <Fundstelle>
     <Dokument>2000/Koneffke_Paul_2000</Dokument>
@@ -68,11 +75,19 @@ multiline_metadata = [
     <Seite>174</Seite>
     <Datum>2000</Datum>
     <Textklasse>Belletristik::Roman</Textklasse>
-    <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag 2000, S. 174</Bibl>
+    <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag
+    2000, S. 174</Bibl>
   </Fundstelle>
-</Beleg>""", """<Beleg>
+</Beleg>""",
+    """<Beleg>
   <Belegtext>
-    Gegen sechs schellte Otto bei Haueisens und ließ sich von Klara ein Bier anbieten und berichten, wer Paul war, und als sie heimkamen, verlangte er mit herrischer Stimme, Haueisen habe seinem Neffen strikt zu verbieten, Heil Hitler zu schmettern, und Max Haueisen, der erst Mantel und Hut ablegte und seine Schuhe auszog und sich nicht um <Stichwort>Blockwart</Stichwort> Otto scherte, der stampfte und schnaufte und schwitzte, als sei er ein kochender Kessel, hob seinen Kopf: »Herr Otto, Sie?
+    Gegen sechs schellte Otto bei Haueisens und ließ sich von Klara ein Bier
+    anbieten und berichten, wer Paul war, und als sie heimkamen, verlangte er
+    mit herrischer Stimme, Haueisen habe seinem Neffen strikt zu verbieten,
+    Heil Hitler zu schmettern, und Max Haueisen, der erst Mantel und Hut
+     ablegte und seine Schuhe auszog und sich nicht um <Stichwort>Blockwart
+     </Stichwort> Otto scherte, der stampfte und schnaufte und schwitzte, als
+     sei er ein kochender Kessel, hob seinen Kopf: »Herr Otto, Sie?
   </Belegtext>
   <Fundstelle>
     <Dokument>2000/Koneffke_Paul_2000</Dokument>
@@ -82,40 +97,63 @@ multiline_metadata = [
     <Seite>175</Seite>
     <Datum>2000</Datum>
     <Textklasse>Belletristik::Roman</Textklasse>
-    <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag 2000, S. 175</Bibl>
+    <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag
+    2000, S. 175</Bibl>
   </Fundstelle>
-</Beleg>""", """<Beleg>
+</Beleg>""",
+    """<Beleg>
   <Belegtext>
-    Noch treibet mich die not/ das ich allernechst an jhr hinein kommen/ da dann die Port so schnell zugeschlagen worden/ das mir auch ein stuck vom Rocke hinein geschlossen worden/ welchs ich gewißlichen dahinden lassen müssen/ dann den <Stichwort>Thorwartten</Stichwort> kondten weder Ich/ noch die so allbereit vor der Thuren daraussen gerufft/ dahin bringen/ daß erwider eröffnet hätte/ Sondern er hab die Schlüssel der Jungfrawen gegeben/ die sie mit sich in den Hoff genommen:
+    Noch treibet mich die not/ das ich allernechst an jhr hinein kommen/ da
+    dann die Port so schnell zugeschlagen worden/ das mir auch ein stuck vom
+    Rocke hinein geschlossen worden/ welchs ich gewißlichen dahinden lassen
+    müssen/ dann den <Stichwort>Thorwartten</Stichwort> kondten weder Ich/ noch
+     die so allbereit vor der Thuren daraussen gerufft/ dahin bringen/ daß
+     erwider eröffnet hätte/ Sondern er hab die Schlüssel der Jungfrawen
+     gegeben/ die sie mit sich in den Hoff genommen:
   </Belegtext>
   <Fundstelle>
     <Dokument>valentin_hochzeit_1616</Dokument>
     <Korpus>dtak</Korpus>
     <Autor>Andreä, Johann Valentin (#118502883)</Autor>
-    <Titel>Chymische Hochzeit: Christiani Rosencreutz. Anno 1459: Arcana publicata vilescunt; &amp; gratiam prophanata amittunt. Ergo: ne Margaritas obijce porcis, seu Asino substerne rosas</Titel>
+    <Titel>Chymische Hochzeit: Christiani Rosencreutz. Anno 1459: Arcana
+    publicata vilescunt; &amp; gratiam prophanata amittunt. Ergo: ne Margaritas
+     obijce porcis, seu Asino substerne rosas</Titel>
     <Datum>1616</Datum>
     <Textklasse>Wissenschaft::Alchemie</Textklasse>
-    <Bibl>Andreä, Johann Valentin: Chymische Hochzeit Christiani Rosencreutz Anno 1459. Straßburg, 1616.</Bibl>
+    <Bibl>Andreä, Johann Valentin: Chymische Hochzeit Christiani Rosencreutz
+    Anno 1459. Straßburg, 1616.</Bibl>
     <URL>https://www.deutschestextarchiv.de/valentin_hochzeit_1616/27</URL>
   </Fundstelle>
-</Beleg>""", """<Beleg>
+</Beleg>""",
+    """<Beleg>
   <Belegtext>
-    Erstlich/ war jhrer ein kleine Anzahl in williger Armuht/ vnd jhr Oberherrein <Stichwort>Thorwart</Stichwort> deß Tempels/ daher sie auch den Namen erhalten.
+    Erstlich/ war jhrer ein kleine Anzahl in williger Armuht/ vnd jhr
+    Oberherrein <Stichwort>Thorwart</Stichwort> deß Tempels/ daher sie auch den
+     Namen erhalten.
   </Belegtext>
   <Fundstelle>
     <Dokument>wartmann_germania01_1650</Dokument>
     <Korpus>dtak</Korpus>
-    <Autor>Wartmann, Sigismund Friedrich (Freyberger, Sigismundus; #124573444)</Autor>
-    <Titel>Germania Pertubata et Restaurata: Das ist/ Vnpartheyische/ wolmeynende/ Theologo-Historica Politische Discursus, Vom Zustand deß gantzen Römischen Reichs/ dessen Auff- vnd Abnehmen/ vnd in Geistlichen vnd Weltlichen Händeln/ vorgangener Verenderungen/ G...</Titel>
+    <Autor>Wartmann, Sigismund Friedrich (Freyberger, Sigismundus; #124573444)
+    </Autor>
+    <Titel>Germania Pertubata et Restaurata: Das ist/ Vnpartheyische/
+    wolmeynende/ Theologo-Historica Politische Discursus, Vom Zustand deß
+    gantzen Römischen Reichs/ dessen Auff- vnd Abnehmen/ vnd in Geistlichen vnd
+     Weltlichen Händeln/ vorgangener Verenderungen/ G...</Titel>
     <Datum>1650</Datum>
     <Textklasse>Wissenschaft::Geschichte</Textklasse>
-    <Bibl>Sigismundus Freyberger [i. e. Wartmann, Sigismund Friedrich]: Germania Pertubata et Restaurata: Das ist [...] Theologo-Historica Politische Discursus, Vom Zustand deß gantzen Römischen Reichs. Bd. 1. Frankfurt (Main), 1650.</Bibl>
+    <Bibl>Sigismundus Freyberger [i. e. Wartmann, Sigismund Friedrich]:
+    Germania Pertubata et Restaurata: Das ist [...] Theologo-Historica
+    Politische Discursus, Vom Zustand deß gantzen Römischen Reichs. Bd. 1.
+    Frankfurt (Main), 1650.</Bibl>
     <URL>https://www.deutschestextarchiv.de/wartmann_germania01_1650/285</URL>
   </Fundstelle>
 </Beleg>""",
-"""<Beleg>
+    """<Beleg>
   <Belegtext>
-    Nun kam der <Stichwort>Thorwart</Stichwort> des Klosters, und fragte, ob sie in das Conversatorium kommen wollten? die Paters waren alle schon da versammelt, und hatten ihre Vigilien schon gesungen.
+    Nun kam der <Stichwort>Thorwart</Stichwort> des Klosters, und fragte, ob
+    sie in das Conversatorium kommen wollten? die Paters waren alle schon da
+    versammelt, und hatten ihre Vigilien schon gesungen.
   </Belegtext>
   <Fundstelle>
     <Dokument>miller_siegwart01_1776</Dokument>
@@ -128,9 +166,14 @@ multiline_metadata = [
     <URL>https://www.deutschestextarchiv.de/miller_siegwart01_1776/39</URL>
   </Fundstelle>
 </Beleg>
-""", """<Beleg>
+""",
+    """<Beleg>
   <Belegtext>
-    23.12.2004 Der Professor als Rebell Zum Tod des Provokateurs und Bestseller-Autors Dietrich Schwanitz Von Dorothee Nolte Nein, das sollte man auf einer Party besser nicht fragen: „Van Gogh, van Gogh, ist das nicht der Mittelstürmer der holländischen Fußballmannschaft, der bei der letzten WM dem deutschen <Stichwort>Torwart</Stichwort> das Nasenbein gebrochen hat?“
+    23.12.2004 Der Professor als Rebell Zum Tod des Provokateurs und Bestseller
+    -Autors Dietrich Schwanitz Von Dorothee Nolte Nein, das sollte man auf
+    einer Party besser nicht fragen: „Van Gogh, van Gogh, ist das nicht der
+    Mittelstürmer der holländischen Fußballmannschaft, der bei der letzten WM
+    dem deutschen <Stichwort>Torwart</Stichwort> das Nasenbein gebrochen hat?“
   </Belegtext>
   <Fundstelle>
     <Dokument>2004/12/TSP_20041223_1555428_asp</Dokument>
@@ -142,9 +185,10 @@ multiline_metadata = [
     <Bibl>Der Tagesspiegel, 23.12.2004</Bibl>
   </Fundstelle>
 </Beleg>""",
-"""<Beleg>
+    """<Beleg>
   <Belegtext>
-    Die große Fußballwelt wird den <Stichwort>Torwart</Stichwort> von Luxemburg kaum vermissen.
+    Die große Fußballwelt wird den <Stichwort>Torwart</Stichwort> von Luxemburg
+     kaum vermissen.
   </Belegtext>
   <Fundstelle>
     <Dokument>1998/06/TSP_19980604_ak_sp_7270_html</Dokument>
@@ -154,9 +198,11 @@ multiline_metadata = [
     <Textklasse>Zeitung</Textklasse>
     <Bibl>Der Tagesspiegel, 04.06.1998</Bibl>
   </Fundstelle>
-</Beleg>""", """<Beleg>
+</Beleg>""",
+    """<Beleg>
   <Belegtext>
-    Welcher <Stichwort>Torwart</Stichwort> war noch gleich wegen Dopings gesperrt?
+    Welcher <Stichwort>Torwart</Stichwort> war noch gleich wegen Dopings
+    gesperrt?
   </Belegtext>
   <Fundstelle>
     <Dokument>oh/OhSpHmMc</Dokument>
@@ -169,9 +215,12 @@ multiline_metadata = [
     <Datum>02.12.2013</Datum>
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
-</Beleg>""", """<Beleg>
+</Beleg>""",
+    """<Beleg>
   <Belegtext>
-    Das 1-2 fiel nach einem gut geschlagenen Freistoß, den Aydogmus auf den kurzen Pfosten nickte und den der Höhenberger <Stichwort>Torwart</Stichwort> nur noch ins eigene Netz abfälschen konnte.
+    Das 1-2 fiel nach einem gut geschlagenen Freistoß, den Aydogmus auf den
+    kurzen Pfosten nickte und den der Höhenberger <Stichwort>Torwart
+    </Stichwort> nur noch ins eigene Netz abfälschen konnte.
   </Belegtext>
   <Fundstelle>
     <Dokument>lx/LxqBTN9w</Dokument>
@@ -179,13 +228,15 @@ multiline_metadata = [
     <Autor>Veröffentlicht</Autor>
     <Titel>Fortuna Köln - Viktoria Köln 4-2 (1-2)</Titel>
     <Textklasse>internetbasiert</Textklasse>
-    <Bibl>Fortuna Köln - Viktoria Köln 4-2 (1-2). The Boy In The Bubble, 2013-11-09</Bibl>
-    <URL>http://surfguard.wordpress.com/2013/11/09/fortuna-koln-viktoria-koln-4-2-1-2/</URL>
+    <Bibl>Fortuna Köln - Viktoria Köln 4-2 (1-2). The Boy In The Bubble,
+    2013-11-09</Bibl>
+    <URL>http://surfguard.wordpress.com/2013/11/09/fortuna-koln-viktoria-koln-4
+-2-1-2/</URL>
     <Datum>09.11.2013</Datum>
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
 </Beleg>""",
-"""<Beleg>
+    """<Beleg>
   <Belegtext>
     „Der <Stichwort>Torwart</Stichwort>?
   </Belegtext>
@@ -202,9 +253,11 @@ multiline_metadata = [
   </Fundstelle>
 </Beleg>
 """,
-"""<Beleg>
+    """<Beleg>
   <Belegtext>
-    Ramazan Yildirim meinte in der Pressekonferenz nach dem Spiel, dass sein bereits umspielter <Stichwort>Torwart</Stichwort> Thomas Kraus nicht berührt habe.
+    Ramazan Yildirim meinte in der Pressekonferenz nach dem Spiel, dass sein
+    bereits umspielter <Stichwort>Torwart</Stichwort> Thomas Kraus nicht
+    berührt habe.
   </Belegtext>
   <Fundstelle>
     <Dokument>tb/tbdTDb7V</Dokument>
@@ -212,12 +265,12 @@ multiline_metadata = [
     <Autor>Veröffentlicht</Autor>
     <Titel>Fortuna Köln - Sportfreunde Lotte 1-2 (1-2)</Titel>
     <Textklasse>internetbasiert</Textklasse>
-    <Bibl>Fortuna Köln - Sportfreunde Lotte 1-2 (1-2). The Boy In The Bubble, 2013-10-06</Bibl>
-    <URL>http://surfguard.wordpress.com/2013/10/06/fortuna-koln-sportfreunde-lotte-1-2/</URL>
+    <Bibl>Fortuna Köln - Sportfreunde Lotte 1-2 (1-2). The Boy In The Bubble,
+    2013-10-06</Bibl>
+    <URL>http://surfguard.wordpress.com/2013/10/06/fortuna-koln-sportfreunde-
+lotte-1-2/</URL>
     <Datum>06.10.2013</Datum>
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
-</Beleg>"""
-
-
+</Beleg>""",
 ]
