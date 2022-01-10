@@ -127,10 +127,25 @@ def test_multiline_strings_one_example(
 def test_scores_for_multiline_strings_same_string(
     multiline_example_scorer, test_multiline_metadata
 ):
-    pass
+    scores = multiline_example_scorer.compute_similarity_matrix(
+        {0: test_multiline_metadata[0], 1: test_multiline_metadata[0]}
+    )["matrix"]
+    assert scores[0][1] == 1.0
 
 
 def test_multiline_scores_for_different_strings_not_one(
     multiline_example_scorer, test_multiline_metadata
 ):
-    pass
+    scores = multiline_example_scorer.compute_similarity_matrix(
+        {0: test_multiline_metadata[0], 1: test_multiline_metadata[3]}
+    )["matrix"]
+    assert scores[0][1] < 1.0
+
+
+def test_multiline_scores_for_multiple_queries(
+    multiline_example_scorer, test_multiline_metadata
+):
+    test_query = dict(zip(range(len(test_multiline_metadata)), test_multiline_metadata))
+    scores = multiline_example_scorer.compute_similarity_matrix(test_query)["matrix"]
+    eigen_scores = [scores[i][i] for i in range(len(scores))]
+    assert all([score == 1 for score in eigen_scores])
