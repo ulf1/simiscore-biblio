@@ -1,4 +1,6 @@
 import pytest
+import os
+
 
 from app.metadata_scorer import MetaDataSimilarityScorer
 
@@ -6,6 +8,11 @@ from app.metadata_scorer import MetaDataSimilarityScorer
 @pytest.fixture(scope="module")
 def scorer():
     return MetaDataSimilarityScorer()
+
+
+@pytest.fixture(scope="module")
+def multiline_example_scorer():
+    return MetaDataSimilarityScorer(multiline=True)
 
 
 @pytest.fixture
@@ -36,6 +43,25 @@ def test_oneline_metadata():
         "Rosegger, Peter: Die Schriften des Waldschulmeisters. Pest, 1875."
         "Die Zeit, 19.10.2000, Nr. 43",
     ]
+
+
+@pytest.fixture
+def test_multiline_metadata():
+    filepath = os.path.join("test", "metadata.txt")
+    with open(filepath, "r", encoding="utf-8") as ptr:
+        metadata_lines = ptr.readlines()
+    grouped_metadata = []
+    collected = ""
+    for line in metadata_lines:
+        if line == "\n":
+            if collected:
+                grouped_metadata.append(collected)
+                collected = ""
+        else:
+            collected += line
+    else:
+        grouped_metadata.append(collected)
+    return grouped_metadata
 
 
 def test_empty_query(scorer):
@@ -88,3 +114,23 @@ def test_scores_multiple_strings(scorer, test_oneline_metadata):
     eigen_scores = [result[i][i] for i in range(len(result))]
     assert eigen_scores[0] == 1
     assert pytest.approx(sum(eigen_scores) == len(test_oneline_metadata))
+
+
+def test_multiline_strings_one_example(
+    multiline_example_scorer, test_multiline_metadata
+):
+    test_query = {"some_id": test_multiline_metadata[0]}
+    result = multiline_example_scorer.compute_similarity_matrix(test_query)
+    assert result == {"ids": ["some_id"], "matrix": [[1.0]]}
+
+
+def test_scores_for_multiline_strings_same_string(
+    multiline_example_scorer, test_multiline_metadata
+):
+    pass
+
+
+def test_multiline_scores_for_different_strings_not_one(
+    multiline_example_scorer, test_multiline_metadata
+):
+    pass
