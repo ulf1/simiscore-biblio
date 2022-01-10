@@ -1,3 +1,32 @@
+one_line_metadata = [
+      "Beenken, Hermann: Das Neunzehnte Jahrhundert in der deutschen Kunst, "
+      "München: Bruckmann 1944, S. 167",
+      "Süddeutsche Zeitung, 1995. Zitiert nach: Süddeutsche Zeitung, " "27.11.1945.",
+      "Lehmann, Arthur-Heinz: Mensch, sei positiv dagegen!, Dresden: Heyne "
+      "1939 [1939], S. 96",
+      "Werfel, Franz: Die Vierzig Tage des Musa Dagh I, Stockholm: Bermann -"
+      " Fischer 1947 [1933], S. 225",
+      "Reimann, Hans: Vergnügliches Handbuch der Deutschen Sprache, "
+      "Düsseldorf: Econ-Verl. 1964 [1931], S. 212",
+      "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
+      "Berlin: Directmedia Publ. 2001 [1917], S. 13229",
+      "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
+      "Berlin: Directmedia Publ. 2001 [1917], S. 13247",
+      "Christ, Lena: Erinnerungen einer Überflüssigen. In: Deutsche Liter"
+      "atur von Frauen, Berlin: Directmedia Publ. 2001 [1912], S. 12498",
+      "Stadler, Arnold: Sehnsucht, Köln: DuMont Literatur und Kunst Verlag "
+      "2002, S. 102",
+      "Hippel, Theodor Gottlieb von: Lebensläufe nach Aufsteigender Linie. "
+      "Bd. 3,2. Berlin, 1781.",
+      "Rudolphi, Caroline Christiane Louise: Gemälde weiblicher Erziehung. "
+      "Bd. 1. Heidelberg, 1807.",
+      "Nestroy, Johann: Einen Jux will er sich machen. Wien, 1844.",
+      "Rosegger, Peter: Die Schriften des Waldschulmeisters. Pest, 1875."
+      "Die Zeit, 19.10.2000, Nr. 43",
+  ]
+
+multiline_metadata = [
+"""
 <Beleg>
   <Belegtext>
     Vielleicht war der Riegel defekt und mußte vom <Stichwort>Blockwart</Stichwort> ausgetauscht werden.
@@ -12,9 +41,8 @@
     <Textklasse>Belletristik::Roman</Textklasse>
     <Bibl>Franck, Julia: Lagerfeuer, Köln: DuMont Literatur und Kunst Verlag 2003, S. 123</Bibl>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""",
+"""<Beleg>
   <Belegtext>
     Der <Stichwort>Blockwart</Stichwort> der DDR-Intellektuellen, Kurt Hager, geifert 1956:
   </Belegtext>
@@ -28,9 +56,7 @@
     <Textklasse>Zeitung::Literatur</Textklasse>
     <Bibl>Die Zeit, 13.01.2000, Nr. 3</Bibl>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""", """<Beleg>
   <Belegtext>
     Am anderen Tag trafen sie <Stichwort>Blockwart</Stichwort> Otto im Hof, der sich straffte und »Heil Hitler!« kreischte, und Paul zauderte nicht, sich bei Blockwart Otto als Stotterer bekannt zu machen.
   </Belegtext>
@@ -44,10 +70,7 @@
     <Textklasse>Belletristik::Roman</Textklasse>
     <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag 2000, S. 174</Bibl>
   </Fundstelle>
-</Beleg>
-
-
-<Beleg>
+</Beleg>""", """<Beleg>
   <Belegtext>
     Gegen sechs schellte Otto bei Haueisens und ließ sich von Klara ein Bier anbieten und berichten, wer Paul war, und als sie heimkamen, verlangte er mit herrischer Stimme, Haueisen habe seinem Neffen strikt zu verbieten, Heil Hitler zu schmettern, und Max Haueisen, der erst Mantel und Hut ablegte und seine Schuhe auszog und sich nicht um <Stichwort>Blockwart</Stichwort> Otto scherte, der stampfte und schnaufte und schwitzte, als sei er ein kochender Kessel, hob seinen Kopf: »Herr Otto, Sie?
   </Belegtext>
@@ -61,9 +84,7 @@
     <Textklasse>Belletristik::Roman</Textklasse>
     <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag 2000, S. 175</Bibl>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""", """<Beleg>
   <Belegtext>
     Noch treibet mich die not/ das ich allernechst an jhr hinein kommen/ da dann die Port so schnell zugeschlagen worden/ das mir auch ein stuck vom Rocke hinein geschlossen worden/ welchs ich gewißlichen dahinden lassen müssen/ dann den <Stichwort>Thorwartten</Stichwort> kondten weder Ich/ noch die so allbereit vor der Thuren daraussen gerufft/ dahin bringen/ daß erwider eröffnet hätte/ Sondern er hab die Schlüssel der Jungfrawen gegeben/ die sie mit sich in den Hoff genommen:
   </Belegtext>
@@ -77,9 +98,7 @@
     <Bibl>Andreä, Johann Valentin: Chymische Hochzeit Christiani Rosencreutz Anno 1459. Straßburg, 1616.</Bibl>
     <URL>https://www.deutschestextarchiv.de/valentin_hochzeit_1616/27</URL>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""", """<Beleg>
   <Belegtext>
     Erstlich/ war jhrer ein kleine Anzahl in williger Armuht/ vnd jhr Oberherrein <Stichwort>Thorwart</Stichwort> deß Tempels/ daher sie auch den Namen erhalten.
   </Belegtext>
@@ -93,9 +112,8 @@
     <Bibl>Sigismundus Freyberger [i. e. Wartmann, Sigismund Friedrich]: Germania Pertubata et Restaurata: Das ist [...] Theologo-Historica Politische Discursus, Vom Zustand deß gantzen Römischen Reichs. Bd. 1. Frankfurt (Main), 1650.</Bibl>
     <URL>https://www.deutschestextarchiv.de/wartmann_germania01_1650/285</URL>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""",
+"""<Beleg>
   <Belegtext>
     Nun kam der <Stichwort>Thorwart</Stichwort> des Klosters, und fragte, ob sie in das Conversatorium kommen wollten? die Paters waren alle schon da versammelt, und hatten ihre Vigilien schon gesungen.
   </Belegtext>
@@ -110,9 +128,7 @@
     <URL>https://www.deutschestextarchiv.de/miller_siegwart01_1776/39</URL>
   </Fundstelle>
 </Beleg>
-
-
-<Beleg>
+""", """<Beleg>
   <Belegtext>
     23.12.2004 Der Professor als Rebell Zum Tod des Provokateurs und Bestseller-Autors Dietrich Schwanitz Von Dorothee Nolte Nein, das sollte man auf einer Party besser nicht fragen: „Van Gogh, van Gogh, ist das nicht der Mittelstürmer der holländischen Fußballmannschaft, der bei der letzten WM dem deutschen <Stichwort>Torwart</Stichwort> das Nasenbein gebrochen hat?“
   </Belegtext>
@@ -125,24 +141,8 @@
     <Textklasse>Zeitung:Kultur</Textklasse>
     <Bibl>Der Tagesspiegel, 23.12.2004</Bibl>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
-  <Belegtext>
-    Jürgen Klinsmann, der im letzten Spiel des Jahres auf Stammspieler wie Michael Ballack und <Stichwort>Torwart</Stichwort> Oliver Kahn vom FC Bayern München sowie den Bremer Miroslav Klose und Bernd Schneider aus Leverkusen verzichtet hatte, sagte: „Wir haben es versäumt, am Anfang für klare Verhältnisse zu sorgen.“
-  </Belegtext>
-  <Fundstelle>
-    <Dokument>2004/12/TSP_20041222_1552478_asp</Dokument>
-    <Korpus>tsp</Korpus>
-    <Autor>Moritz MüllerunbekanntWirth, Bangkok</Autor>
-    <Titel>Thai-Fußball</Titel>
-    <Datum>22.12.2004</Datum>
-    <Textklasse>Zeitung:Sport</Textklasse>
-    <Bibl>Der Tagesspiegel, 22.12.2004</Bibl>
-  </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""",
+"""<Beleg>
   <Belegtext>
     Die große Fußballwelt wird den <Stichwort>Torwart</Stichwort> von Luxemburg kaum vermissen.
   </Belegtext>
@@ -154,9 +154,7 @@
     <Textklasse>Zeitung</Textklasse>
     <Bibl>Der Tagesspiegel, 04.06.1998</Bibl>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""", """<Beleg>
   <Belegtext>
     Welcher <Stichwort>Torwart</Stichwort> war noch gleich wegen Dopings gesperrt?
   </Belegtext>
@@ -171,9 +169,7 @@
     <Datum>02.12.2013</Datum>
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""", """<Beleg>
   <Belegtext>
     Das 1-2 fiel nach einem gut geschlagenen Freistoß, den Aydogmus auf den kurzen Pfosten nickte und den der Höhenberger <Stichwort>Torwart</Stichwort> nur noch ins eigene Netz abfälschen konnte.
   </Belegtext>
@@ -188,9 +184,8 @@
     <Datum>09.11.2013</Datum>
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
-</Beleg>
-
-<Beleg>
+</Beleg>""",
+"""<Beleg>
   <Belegtext>
     „Der <Stichwort>Torwart</Stichwort>?
   </Belegtext>
@@ -206,8 +201,8 @@
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
 </Beleg>
-
-<Beleg>
+""",
+"""<Beleg>
   <Belegtext>
     Ramazan Yildirim meinte in der Pressekonferenz nach dem Spiel, dass sein bereits umspielter <Stichwort>Torwart</Stichwort> Thomas Kraus nicht berührt habe.
   </Belegtext>
@@ -222,4 +217,7 @@
     <Datum>06.10.2013</Datum>
     <Aufrufdatum>21.07.2020</Aufrufdatum>
   </Fundstelle>
-</Beleg>
+</Beleg>"""
+
+
+]
