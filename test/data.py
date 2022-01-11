@@ -1,0 +1,276 @@
+one_line_metadata = [
+    "Beenken, Hermann: Das Neunzehnte Jahrhundert in der deutschen Kunst, "
+    "München: Bruckmann 1944, S. 167",
+    "Süddeutsche Zeitung, 1995. Zitiert nach: Süddeutsche Zeitung, "
+    "27.11.1945.",
+    "Lehmann, Arthur-Heinz: Mensch, sei positiv dagegen!, Dresden: Heyne "
+    "1939 [1939], S. 96",
+    "Werfel, Franz: Die Vierzig Tage des Musa Dagh I, Stockholm: Bermann -"
+    " Fischer 1947 [1933], S. 225",
+    "Reimann, Hans: Vergnügliches Handbuch der Deutschen Sprache, "
+    "Düsseldorf: Econ-Verl. 1964 [1931], S. 212",
+    "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
+    "Berlin: Directmedia Publ. 2001 [1917], S. 13229",
+    "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, "
+    "Berlin: Directmedia Publ. 2001 [1917], S. 13247",
+    "Christ, Lena: Erinnerungen einer Überflüssigen. In: Deutsche Liter"
+    "atur von Frauen, Berlin: Directmedia Publ. 2001 [1912], S. 12498",
+    "Stadler, Arnold: Sehnsucht, Köln: DuMont Literatur und Kunst Verlag "
+    "2002, S. 102",
+    "Hippel, Theodor Gottlieb von: Lebensläufe nach Aufsteigender Linie. "
+    "Bd. 3,2. Berlin, 1781.",
+    "Rudolphi, Caroline Christiane Louise: Gemälde weiblicher Erziehung. "
+    "Bd. 1. Heidelberg, 1807.",
+    "Nestroy, Johann: Einen Jux will er sich machen. Wien, 1844.",
+    "Rosegger, Peter: Die Schriften des Waldschulmeisters. Pest, 1875."
+    "Die Zeit, 19.10.2000, Nr. 43",
+]
+
+multiline_metadata = [
+    """
+<Beleg>
+  <Belegtext>
+    Vielleicht war der Riegel defekt und mußte vom <Stichwort>Blockwart
+    </Stichwort> ausgetauscht werden.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>2003/Franck_Lagerfeuer_2003</Dokument>
+    <Korpus>korpus21</Korpus>
+    <Autor>Julia Knoepke</Autor>
+    <Titel>Lagerfeuer</Titel>
+    <Seite>123</Seite>
+    <Datum>2003</Datum>
+    <Textklasse>Belletristik::Roman</Textklasse>
+    <Bibl>Franck, Julia: Lagerfeuer, Köln: DuMont Literatur und Kunst Verlag
+    2003, S. 123</Bibl>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Der <Stichwort>Blockwart</Stichwort> der DDR-Intellektuellen, Kurt Hager,
+    geifert 1956:
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>2000/zeit2000_03_52_331</Dokument>
+    <Korpus>korpus21</Korpus>
+    <Autor>Rolf Michaelis</Autor>
+    <Titel>Ein Jahrhundert räuspert sich</Titel>
+    <Seite>52</Seite>
+    <Datum>13.01.2000</Datum>
+    <Textklasse>Zeitung::Literatur</Textklasse>
+    <Bibl>Die Zeit, 13.01.2000, Nr. 3</Bibl>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Am anderen Tag trafen sie <Stichwort>Blockwart</Stichwort> Otto im Hof, der
+     sich straffte und »Heil Hitler!« kreischte, und Paul zauderte nicht, sich
+    bei Blockwart Otto als Stotterer bekannt zu machen.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>2000/Koneffke_Paul_2000</Dokument>
+    <Korpus>korpus21</Korpus>
+    <Autor>Name</Autor>
+    <Titel>Paul Schatz im Uhrenkasten</Titel>
+    <Seite>174</Seite>
+    <Datum>2000</Datum>
+    <Textklasse>Belletristik::Roman</Textklasse>
+    <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag
+    2000, S. 174</Bibl>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Gegen sechs schellte Otto bei Haueisens und ließ sich von Klara ein Bier
+    anbieten und berichten, wer Paul war, und als sie heimkamen, verlangte er
+    mit herrischer Stimme, Haueisen habe seinem Neffen strikt zu verbieten,
+    Heil Hitler zu schmettern, und Max Haueisen, der erst Mantel und Hut
+     ablegte und seine Schuhe auszog und sich nicht um <Stichwort>Blockwart
+     </Stichwort> Otto scherte, der stampfte und schnaufte und schwitzte, als
+     sei er ein kochender Kessel, hob seinen Kopf: »Herr Otto, Sie?
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>2000/Koneffke_Paul_2000</Dokument>
+    <Korpus>korpus21</Korpus>
+    <Autor>Name</Autor>
+    <Titel>Paul Schatz im Uhrenkasten</Titel>
+    <Seite>175</Seite>
+    <Datum>2000</Datum>
+    <Textklasse>Belletristik::Roman</Textklasse>
+    <Bibl>Koneffke, Jan: Paul Schatz im Uhrenkasten, Köln: DuMont Buchverlag
+    2000, S. 175</Bibl>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Noch treibet mich die not/ das ich allernechst an jhr hinein kommen/ da
+    dann die Port so schnell zugeschlagen worden/ das mir auch ein stuck vom
+    Rocke hinein geschlossen worden/ welchs ich gewißlichen dahinden lassen
+    müssen/ dann den <Stichwort>Thorwartten</Stichwort> kondten weder Ich/ noch
+     die so allbereit vor der Thuren daraussen gerufft/ dahin bringen/ daß
+     erwider eröffnet hätte/ Sondern er hab die Schlüssel der Jungfrawen
+     gegeben/ die sie mit sich in den Hoff genommen:
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>valentin_hochzeit_1616</Dokument>
+    <Korpus>dtak</Korpus>
+    <Autor>Andreä, Johann Valentin (#118502883)</Autor>
+    <Titel>Chymische Hochzeit: Christiani Rosencreutz. Anno 1459: Arcana
+    publicata vilescunt; &amp; gratiam prophanata amittunt. Ergo: ne Margaritas
+     obijce porcis, seu Asino substerne rosas</Titel>
+    <Datum>1616</Datum>
+    <Textklasse>Wissenschaft::Alchemie</Textklasse>
+    <Bibl>Andreä, Johann Valentin: Chymische Hochzeit Christiani Rosencreutz
+    Anno 1459. Straßburg, 1616.</Bibl>
+    <URL>https://www.deutschestextarchiv.de/valentin_hochzeit_1616/27</URL>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Erstlich/ war jhrer ein kleine Anzahl in williger Armuht/ vnd jhr
+    Oberherrein <Stichwort>Thorwart</Stichwort> deß Tempels/ daher sie auch den
+     Namen erhalten.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>wartmann_germania01_1650</Dokument>
+    <Korpus>dtak</Korpus>
+    <Autor>Wartmann, Sigismund Friedrich (Freyberger, Sigismundus; #124573444)
+    </Autor>
+    <Titel>Germania Pertubata et Restaurata: Das ist/ Vnpartheyische/
+    wolmeynende/ Theologo-Historica Politische Discursus, Vom Zustand deß
+    gantzen Römischen Reichs/ dessen Auff- vnd Abnehmen/ vnd in Geistlichen vnd
+     Weltlichen Händeln/ vorgangener Verenderungen/ G...</Titel>
+    <Datum>1650</Datum>
+    <Textklasse>Wissenschaft::Geschichte</Textklasse>
+    <Bibl>Sigismundus Freyberger [i. e. Wartmann, Sigismund Friedrich]:
+    Germania Pertubata et Restaurata: Das ist [...] Theologo-Historica
+    Politische Discursus, Vom Zustand deß gantzen Römischen Reichs. Bd. 1.
+    Frankfurt (Main), 1650.</Bibl>
+    <URL>https://www.deutschestextarchiv.de/wartmann_germania01_1650/285</URL>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Nun kam der <Stichwort>Thorwart</Stichwort> des Klosters, und fragte, ob
+    sie in das Conversatorium kommen wollten? die Paters waren alle schon da
+    versammelt, und hatten ihre Vigilien schon gesungen.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>miller_siegwart01_1776</Dokument>
+    <Korpus>dtak</Korpus>
+    <Autor>Miller, Johann Martin (#118784013)</Autor>
+    <Titel>Siegwart: Eine Klostergeschichte</Titel>
+    <Datum>1776</Datum>
+    <Textklasse>Belletristik::Prosa</Textklasse>
+    <Bibl>Miller, Johann Martin: Siegwart. Bd. 1. Leipzig, 1776.</Bibl>
+    <URL>https://www.deutschestextarchiv.de/miller_siegwart01_1776/39</URL>
+  </Fundstelle>
+</Beleg>
+""",
+    """<Beleg>
+  <Belegtext>
+    23.12.2004 Der Professor als Rebell Zum Tod des Provokateurs und Bestseller
+    -Autors Dietrich Schwanitz Von Dorothee Nolte Nein, das sollte man auf
+    einer Party besser nicht fragen: „Van Gogh, van Gogh, ist das nicht der
+    Mittelstürmer der holländischen Fußballmannschaft, der bei der letzten WM
+    dem deutschen <Stichwort>Torwart</Stichwort> das Nasenbein gebrochen hat?“
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>2004/12/TSP_20041223_1555428_asp</Dokument>
+    <Korpus>tsp</Korpus>
+    <Autor>Dorothee Nolte</Autor>
+    <Titel>Der Professor als Rebell</Titel>
+    <Datum>23.12.2004</Datum>
+    <Textklasse>Zeitung:Kultur</Textklasse>
+    <Bibl>Der Tagesspiegel, 23.12.2004</Bibl>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Die große Fußballwelt wird den <Stichwort>Torwart</Stichwort> von Luxemburg
+     kaum vermissen.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>1998/06/TSP_19980604_ak_sp_7270_html</Dokument>
+    <Korpus>tsp</Korpus>
+    <Titel></Titel>
+    <Datum>04.06.1998</Datum>
+    <Textklasse>Zeitung</Textklasse>
+    <Bibl>Der Tagesspiegel, 04.06.1998</Bibl>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Welcher <Stichwort>Torwart</Stichwort> war noch gleich wegen Dopings
+    gesperrt?
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>oh/OhSpHmMc</Dokument>
+    <Korpus>blogs</Korpus>
+    <Autor>Ssoer</Autor>
+    <Titel>Thodian</Titel>
+    <Textklasse>internetbasiert</Textklasse>
+    <Bibl>Thodian. Thodian, 2013-12-02</Bibl>
+    <URL>http://thodian.wordpress.com/blog/</URL>
+    <Datum>02.12.2013</Datum>
+    <Aufrufdatum>21.07.2020</Aufrufdatum>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    Das 1-2 fiel nach einem gut geschlagenen Freistoß, den Aydogmus auf den
+    kurzen Pfosten nickte und den der Höhenberger <Stichwort>Torwart
+    </Stichwort> nur noch ins eigene Netz abfälschen konnte.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>lx/LxqBTN9w</Dokument>
+    <Korpus>blogs</Korpus>
+    <Autor>Veröffentlicht</Autor>
+    <Titel>Fortuna Köln - Viktoria Köln 4-2 (1-2)</Titel>
+    <Textklasse>internetbasiert</Textklasse>
+    <Bibl>Fortuna Köln - Viktoria Köln 4-2 (1-2). The Boy In The Bubble,
+    2013-11-09</Bibl>
+    <URL>http://surfguard.wordpress.com/2013/11/09/fortuna-koln-viktoria-koln-4
+-2-1-2/</URL>
+    <Datum>09.11.2013</Datum>
+    <Aufrufdatum>21.07.2020</Aufrufdatum>
+  </Fundstelle>
+</Beleg>""",
+    """<Beleg>
+  <Belegtext>
+    „Der <Stichwort>Torwart</Stichwort>?
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>dd/DdJAmf8h</Dokument>
+    <Korpus>blogs</Korpus>
+    <Autor>Hildegardlewi</Autor>
+    <Titel>Der Blickwinkel</Titel>
+    <Textklasse>internetbasiert</Textklasse>
+    <Bibl>Der Blickwinkel. Hildegard Lewandowsky, 2013-11-07</Bibl>
+    <URL>http://hildegardlewi.wordpress.com/2013/11/07/der-blickwinkel-2/</URL>
+    <Datum>07.11.2013</Datum>
+    <Aufrufdatum>21.07.2020</Aufrufdatum>
+  </Fundstelle>
+</Beleg>
+""",
+    """<Beleg>
+  <Belegtext>
+    Ramazan Yildirim meinte in der Pressekonferenz nach dem Spiel, dass sein
+    bereits umspielter <Stichwort>Torwart</Stichwort> Thomas Kraus nicht
+    berührt habe.
+  </Belegtext>
+  <Fundstelle>
+    <Dokument>tb/tbdTDb7V</Dokument>
+    <Korpus>blogs</Korpus>
+    <Autor>Veröffentlicht</Autor>
+    <Titel>Fortuna Köln - Sportfreunde Lotte 1-2 (1-2)</Titel>
+    <Textklasse>internetbasiert</Textklasse>
+    <Bibl>Fortuna Köln - Sportfreunde Lotte 1-2 (1-2). The Boy In The Bubble,
+    2013-10-06</Bibl>
+    <URL>http://surfguard.wordpress.com/2013/10/06/fortuna-koln-sportfreunde-
+lotte-1-2/</URL>
+    <Datum>06.10.2013</Datum>
+    <Aufrufdatum>21.07.2020</Aufrufdatum>
+  </Fundstelle>
+</Beleg>""",
+]
