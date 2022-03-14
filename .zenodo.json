@@ -1,0 +1,23 @@
+{
+    "creators": [
+        {
+            "name": "Ulf Hamster",
+            "orcid": "0000-0002-0440-4868"
+        },
+        {
+            "name": "Luise Köhler",
+            "orcid": "0000-0001-5144-1920"
+        }
+    ],
+    "title": "simiscore-semantic",
+    "description": "An ML API to compute similarity scores between meta information about sentence examples. The API is programmed with the `fastapi` Python package. The deployment is configured for Docker Compose.",
+    "license": "Apache-2.0",
+    "upload_type": "software",
+    "keywords": [
+      "semantic similarity", "similarity scores", 
+      "SBert", "sentence-transformers",
+      "jaccard similarity", "datasketch", "minhash",
+      "REST API", "fastapi", "ML API",
+      "Open-source"
+    ]
+  }
