@@ -1,3 +1,12 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "ulf1",
+      "id": 8018044,
+      "comment_id": 1079138784,
+      "created_at": "2022-03-25T15:25:42Z",
+      "repoId": 355466087,
+      "pullRequestNo": 9
+    }
+  ]
 }
