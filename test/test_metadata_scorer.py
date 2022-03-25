@@ -80,7 +80,7 @@ def test_scores_multiple_strings(scorer, test_oneline_metadata):
     result = scorer.compute_similarity_matrix(test_query)["matrix"]
     eigen_scores = [result[i][i] for i in range(len(result))]
     assert eigen_scores[0] == 1
-    assert pytest.approx(sum(eigen_scores) == len(test_oneline_metadata))
+    assert pytest.approx(sum(eigen_scores)) == len(test_oneline_metadata)
 
 
 def test_multiline_strings_one_example(
