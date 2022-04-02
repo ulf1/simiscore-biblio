@@ -11,24 +11,14 @@
 Call Docker Compose
 
 ```sh
-export NUM_WORKERS=2
 export API_PORT=12345
 docker-compose up
 # or as oneliner:
-# NUM_WORKERS=2 API_PORT=12345 docker-compose up
+
+API_PORT=12345 docker-compose up
 ```
 
 (Start docker daemon before, e.g. `open /Applications/Docker.app` on MacOS).
-
-Check
-
-```sh
-curl http://localhost:12345
-curl "http://127.0.0.1:12345/items/5?q=somequery"
-```
-
-Notes: Only `main.py` is used in `Dockerfile`.
-
 
 
 ## Local Development
@@ -50,9 +40,9 @@ pip install -r requirements-dev.txt --no-cache-dir
 
 ```sh
 source .venv/bin/activate
-#uvicorn app.main:app --reload
-gunicorn app.main:app --reload --bind=0.0.0.0:80 \
-    --worker-class=uvicorn.workers.UvicornH11Worker --workers=2
+uvicorn app.main:app --reload
+# gunicorn app.main:app --reload --bind=0.0.0.0:8080 \
+#     --worker-class=uvicorn.workers.UvicornH11Worker --workers=2
 ```
 
 Notes: 
