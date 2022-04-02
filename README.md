@@ -3,6 +3,7 @@
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/satzbeleg/simiscore-legal.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/satzbeleg/simiscore-legal/context:python)
 
 
+
 # simiscore-legal
 An ML API to compute similarity scores between meta information about sentence examples. 
 The API is programmed with the [`fastapi` Python package](https://fastapi.tiangolo.com/), 
