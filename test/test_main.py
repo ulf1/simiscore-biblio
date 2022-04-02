@@ -48,4 +48,4 @@ def test_post_request_one_line_strings(test_online_metadata):
         for i in range(len(test_online_metadata))
     ]
     assert response.status_code == 200
-    assert pytest.approx(sum(result) == len(test_online_metadata))
+    assert pytest.approx(sum(result)) == len(test_online_metadata)
