@@ -1,11 +1,13 @@
 version: '3'
 services:
-  simiscore-legal:
-    build: .   # build using Dockfile in this directory
-    command: sh -c "gunicorn app.main:app 
-                      --bind 0.0.0.0:80 
-                      --worker-class uvicorn.workers.UvicornH11Worker 
-                      --workers ${NUM_WORKERS}
-                      --worker-tmp-dir /dev/shm"
+  simiscore-syntax:
+    image: evidence-simiscore-legal
+    build:   # build using Dockfile in this directory
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      # Fastapi/gunicorn settings, see https://github.com/tiangolo/uvicorn-gunicorn-docker/tree/master#workers_per_core
+      - "WORKERS_PER_CORE=0.5"
+      # - "MAX_WORKERS=2"
     ports:
       - "${API_PORT}:80"
