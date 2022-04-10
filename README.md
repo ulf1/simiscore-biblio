@@ -5,7 +5,7 @@
 
 
 # simiscore-legal
-An ML API to compute similarity scores between meta information about sentence examples. 
+An ML API to compute similarity scores between sentence examples based on their meta information. 
 The API is programmed with the [`fastapi` Python package](https://fastapi.tiangolo.com/), 
 uses the packages [`datasketch`](http://ekzhu.com/datasketch/index.html) and [`kshingle`](https://github.com/ulf1/kshingle) to compute similarity scores.
 The deployment is configured for Docker Compose.
