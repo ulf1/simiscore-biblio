@@ -9,7 +9,7 @@ srvurl = ""
 
 
 app = FastAPI(
-    title="simiscore-legal ML API",
+    title="simiscore-biblio ML API",
     descriptions=(
         "ML API to compute similarity scores using bibliographic "
         "meta-information"
