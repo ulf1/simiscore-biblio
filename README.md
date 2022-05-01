@@ -1,11 +1,11 @@
 [![Join the chat at https://gitter.im/satzbeleg/community](https://badges.gitter.im/satzbeleg/community.svg)](https://gitter.im/satzbeleg/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/satzbeleg/simiscore-legal.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/satzbeleg/simiscore-legal/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/satzbeleg/simiscore-legal.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/satzbeleg/simiscore-legal/context:python)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/satzbeleg/simiscore-biblio.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/satzbeleg/simiscore-biblio/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/satzbeleg/simiscore-biblio.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/satzbeleg/simiscore-biblio/context:python)
 
 
 
-# simiscore-legal
-An ML API to compute similarity scores between sentence examples based on their meta information. 
+# simiscore-biblio
+An ML API to compute similarity scores between meta information about sentence examples. 
 The API is programmed with the [`fastapi` Python package](https://fastapi.tiangolo.com/), 
 uses the packages [`datasketch`](http://ekzhu.com/datasketch/index.html) and [`kshingle`](https://github.com/ulf1/kshingle) to compute similarity scores.
 The deployment is configured for Docker Compose.
@@ -68,8 +68,8 @@ rm -r .venv
 ## Appendix
 
 ### Support
-Please [open an issue](https://github.com/satzbeleg/simiscore-legal/issues/new) for support.
+Please [open an issue](https://github.com/satzbeleg/simiscore-biblio/issues/new) for support.
 
 
 ### Contributing
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/satzbeleg/simiscore-legal/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/satzbeleg/simiscore-biblio/compare/).
