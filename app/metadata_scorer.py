@@ -2,7 +2,7 @@ import uuid
 from typing import Dict, List, Set
 
 import datasketch
-import kshingle
+import kshingle as ks
 from bs4 import BeautifulSoup
 
 
@@ -102,7 +102,7 @@ class MetaDataSimilarityScorer:
                 for example in query_sents
             ]
         for sentence in query_sents:
-            shingle_set = kshingle.shingleset_k(sentence, self.max_k)
+            shingle_set = ks.shingleset_k(sentence, self.max_k)
             minhash = self._hash_shingle_set(shingle_set)
             minhash_table.append(minhash)
         return minhash_table
