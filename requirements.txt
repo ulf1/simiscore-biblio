@@ -3,5 +3,3 @@ numpy>=1.17.4
 datasketch>=1.5.4,<2
 kshingle>=0.9.9, <1
 beautifulsoup4>=4.10.0,<5
-# downgrade protobuf due to a bug by google
-protobuf==3.20.*
