@@ -15,14 +15,7 @@ def test_read_info():
     client = TestClient(app)
     response = client.get(f"{srvurl}/")
     assert response.status_code == 200
-    assert response.json() == {
-        "version": "0.1.0",
-        "metadata_scorer": [
-            "max_k: 5",
-            "multiline: False",
-            "start_tag: fundstelle",
-        ],
-    }
+    assert response.json().get("version") == "0.1.0"
 
 
 def test_docs_reachable():

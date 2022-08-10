@@ -14,14 +14,22 @@ The deployment is configured for Docker Compose.
 Call Docker Compose
 
 ```sh
-export API_PORT=12345
+export API_PORT=8081
 docker-compose -f docker-compose.yml up --build
 # or as oneliner:
 
-API_PORT=12345 docker-compose up
+API_PORT=8081 docker-compose up
 ```
 
 (Start docker daemon before, e.g. `open /Applications/Docker.app` on MacOS).
+
+Check
+
+```sh
+curl http://localhost:8081
+```
+
+Notes: Only `main.py` is used in `Dockerfile`.
 
 
 ## Local Development
@@ -43,17 +51,26 @@ pip install -r requirements-dev.txt --no-cache-dir
 
 ```sh
 source .venv/bin/activate
-uvicorn app.main:app --reload
-# gunicorn app.main:app --reload --bind=0.0.0.0:8080 \
-#     --worker-class=uvicorn.workers.UvicornH11Worker --workers=2
+# uvicorn app.main:app --reload
+gunicorn app.main:app --reload --bind=0.0.0.0:8081 \
+    --worker-class=uvicorn.workers.UvicornH11Worker \
+    --workers=1 --timeout=600
 ```
 
+### Run some requests
+
+```sh
+curl -X POST "http://localhost:8081/similarities/" \
+    -H "accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d '["Die Kuh macht muh.", "Die Muh macht kuh."]'
+```
 
 ### Other commands and help
 * Check syntax: `flake8 --ignore=F401 --exclude=$(grep -v '^#' .gitignore | xargs | sed -e 's/ /,/g')`
 * Run Unit Tests: `PYTHONPATH=. pytest`
-- Show the docs: [http://localhost:80/docs](http://localhost:80/docs)
-- Show Redoc: [http://localhost:80/redoc](http://localhost:80/redoc)
+- Show the docs: [http://localhost:8081/docs](http://localhost:8081/docs)
+- Show Redoc: [http://localhost:8081/redoc](http://localhost:8081/redoc)
 
 
 ### Clean up 

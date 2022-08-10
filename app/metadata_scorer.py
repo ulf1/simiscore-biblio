@@ -2,7 +2,7 @@ import uuid
 from typing import Dict, List, Set
 
 import datasketch
-import kshingle
+import kshingle as ks
 from bs4 import BeautifulSoup
 
 
@@ -45,6 +45,7 @@ class MetaDataSimilarityScorer:
     def __init__(
         self,
         max_k: int = 5,
+        num_perm: int = 256,
         multiline: bool = False,
         start_tag: str = "fundstelle",
     ) -> None:
@@ -63,6 +64,7 @@ class MetaDataSimilarityScorer:
 
         """
         self.max_k = max_k
+        self.num_perm = num_perm
         self.multiline = multiline
         self.start_tag = start_tag
 
@@ -102,13 +104,13 @@ class MetaDataSimilarityScorer:
                 for example in query_sents
             ]
         for sentence in query_sents:
-            shingle_set = kshingle.shingleset_k(sentence, self.max_k)
+            shingle_set = ks.shingleset_k(sentence, self.max_k)
             minhash = self._hash_shingle_set(shingle_set)
             minhash_table.append(minhash)
         return minhash_table
 
     def _hash_shingle_set(self, shingle_set: Set[str]) -> datasketch.MinHash:
-        minhash = datasketch.MinHash(num_perm=256)
+        minhash = datasketch.MinHash(num_perm=self.num_perm)
         for shingle in shingle_set:
             minhash.update(shingle.encode("utf-8"))
         return minhash
