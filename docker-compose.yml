@@ -6,8 +6,11 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      # Fastapi/gunicorn settings, see https://github.com/tiangolo/uvicorn-gunicorn-docker/tree/master#workers_per_core
+      # Fastapi/gunicorn settings, see 
+      # https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker#environment-variables
       - "WORKERS_PER_CORE=0.5"
       # - "MAX_WORKERS=2"
+      - "TIMEOUT=180"
+      # - "GRACEFUL_TIMEOUT=180"
     ports:
       - "${API_PORT}:80"

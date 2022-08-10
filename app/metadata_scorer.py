@@ -45,6 +45,7 @@ class MetaDataSimilarityScorer:
     def __init__(
         self,
         max_k: int = 5,
+        num_perm: int = 256,
         multiline: bool = False,
         start_tag: str = "fundstelle",
     ) -> None:
@@ -63,6 +64,7 @@ class MetaDataSimilarityScorer:
 
         """
         self.max_k = max_k
+        self.num_perm = num_perm
         self.multiline = multiline
         self.start_tag = start_tag
 
@@ -108,7 +110,7 @@ class MetaDataSimilarityScorer:
         return minhash_table
 
     def _hash_shingle_set(self, shingle_set: Set[str]) -> datasketch.MinHash:
-        minhash = datasketch.MinHash(num_perm=256)
+        minhash = datasketch.MinHash(num_perm=self.num_perm)
         for shingle in shingle_set:
             minhash.update(shingle.encode("utf-8"))
         return minhash

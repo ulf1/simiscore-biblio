@@ -26,13 +26,24 @@ similarity_scorer = MetaDataSimilarityScorer()
 @app.get(f"{srvurl}/")
 def get_info() -> dict:
     """Returns basic information about the application"""
+    start_tag_dict = {}
+    if similarity_scorer.multiline:
+        start_tag_dict = {"start-tag": similarity_scorer.start_tag}
     return {
+        "name": "simiscore-biblio",
         "version": app.version,
-        "metadata_scorer": [
-            f"max_k: {similarity_scorer.max_k}",
-            f"multiline: {similarity_scorer.multiline}",
-            f"start_tag: {similarity_scorer.start_tag}",
-        ],
+        "datasketch": {
+            "k": similarity_scorer.max_k,
+            "num_perm": similarity_scorer.num_perm,
+        },
+        "input-data": {
+            "type": "dwds-xml" if similarity_scorer.multiline else "string",
+            **start_tag_dict
+        },
+        "output-data": {
+            "type": "matrix",
+            "metric": "jaccard"
+        }
     }
 
 
