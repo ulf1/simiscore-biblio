@@ -86,7 +86,7 @@ rm -r .venv
 ### References
 - Sebastián Ramírez, 2018, FastAPI, [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)
 - Eric Zhu, Vadim Markovtsev, aastafiev, Wojciech Łukasiewicz, ae-foster, Sinusoidal36, Ekevoo, Kevin Mann, Keyur Joshi, Peter Kubov, Qin TianHuan, Spandan Thakur, Stefano Ortolani, Titusz, Vojtech Letal, Zac Bentley, fpug, & oisincar. (2021). ekzhu/datasketch: v1.5.4 (v1.5.4). Zenodo. [https://doi.org/10.5281/zenodo.5758425](https://doi.org/10.5281/zenodo.5758425)
-- Ulf Hamster. (2022). kshingle: Shingling text data (0.8.5). Zenodo. [https://doi.org/10.5281/zenodo.6387768](https://doi.org/10.5281/zenodo.6387768)
+- Ulf Hamster. (2022). kshingle: Shingling text data (0.10.0). Zenodo. [https://doi.org/10.5281/zenodo.7096407](https://doi.org/10.5281/zenodo.7096407)
 - Leonard Richardson, 2007, Beautiful soup, [https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/)
 
 ### Support
