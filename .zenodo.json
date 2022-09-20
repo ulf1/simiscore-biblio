@@ -10,12 +10,12 @@
         }
     ],
     "title": "simiscore-biblio",
-    "description": "An ML API to compute similarity scores between meta information about sentence examples. The API is programmed with the `fastapi` Python package. The deployment is configured for Docker Compose.",
+    "description": "An ML API to compute similarity scores between meta information about sentence examples.",
     "license": "Apache-2.0",
     "upload_type": "software",
     "keywords": [
       "similarity scores", 
-      "jaccard similarity", "datasketch", "minhash",
+      "jaccard similarity", "datasketch", "minhash", "k-shingle", "shingling",
       "REST API", "fastapi", "ML API",
       "Open-source"
     ]
