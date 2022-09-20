@@ -1,4 +1,5 @@
 [![Join the chat at https://gitter.im/satzbeleg/community](https://badges.gitter.im/satzbeleg/community.svg)](https://gitter.im/satzbeleg/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![DOI](https://zenodo.org/badge/355466087.svg)](https://zenodo.org/badge/latestdoi/355466087)
 
 
 # simiscore-biblio
@@ -85,6 +86,19 @@ rm -r .venv
 ## Appendix
 
 ### Citation
+```
+@software{ulf_hamster_2022_7096467,
+  author       = {Ulf Hamster and
+                  Luise Köhler},
+  title        = {simiscore-biblio: ML API for bibliographic similarities},
+  month        = sep,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {0.1.0},
+  doi          = {10.5281/zenodo.7096467},
+  url          = {https://doi.org/10.5281/zenodo.7096467}
+}
+```
 
 ### References
 - Sebastián Ramírez, 2018, FastAPI, [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)
