@@ -15,7 +15,7 @@ export API_PORT=8081
 docker-compose -f docker-compose.yml up --build
 # or as oneliner:
 
-API_PORT=8081 docker-compose up
+API_PORT=8081 docker-compose up --build
 ```
 
 (Start docker daemon before, e.g. `open /Applications/Docker.app` on MacOS).
@@ -60,7 +60,10 @@ gunicorn app.main:app --reload --bind=0.0.0.0:8081 \
 curl -X POST "http://localhost:8081/similarities/" \
     -H "accept: application/json" \
     -H "Content-Type: application/json" \
-    -d '["Die Kuh macht muh.", "Die Muh macht kuh."]'
+    -d '[
+        "Christ, Lena: Die Rumplhanni. In: Deutsche Literatur von Frauen, Berlin: Directmedia Publ. 2001 [1917], S. 13229", 
+        "Christ, Lena: Erinnerungen einer Überflüssigen. In: Deutsche Literatur von Frauen, Berlin: Directmedia Publ. 2001 [1912], S. 12498"
+    ]'
 ```
 
 ### Other commands and help
