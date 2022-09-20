@@ -1,7 +1,7 @@
 version: '3'
 services:
   simiscore-biblio:
-    image: evidence-simiscore-biblio
+    image: simiscore-biblio
     build:   # build using Dockfile in this directory
       context: .
       dockerfile: Dockerfile
